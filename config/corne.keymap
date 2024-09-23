@@ -37,10 +37,10 @@
 
             display-name = "Num_Sym";
             bindings = <
-&none  &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &none
-&none  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp LS(PIPE)
-&none  &kp EQUAL     &kp LS(PLUS)  &kp MINUS      &kp LS(UNDER)  &kp LS(TILDE)    &kp LBKT       &kp RBKT      &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH      &none
-                                   &trans         &trans         &trans           &trans         &trans        &trans
+&none  &kp EXCLAMATION  &kp AT    &kp HASH   &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &kp N1           &kp N2    &kp N3     &kp N4          &kp N5         &kp N6     &kp N7         &kp N8          &kp N9                &kp N0                 &kp PIPE
+&none  &kp EQUAL        &kp PLUS  &kp MINUS  &kp UNDERSCORE  &kp TILDE      &kp LBKT   &kp RBKT       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH               &none
+                                  &trans     &trans          &trans         &trans     &trans         &trans
             >;
 
             label = "Num_Sym";
