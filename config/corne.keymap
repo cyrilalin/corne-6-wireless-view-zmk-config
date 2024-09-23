@@ -60,8 +60,8 @@
 
             display-name = "Nav_Fun";
             bindings = <
-&none   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp HOME    &none           &kp PAGE_DOWN      &kp PAGE_UP      &none       &none
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp INSERT  &kp LEFT        &kp DOWN           &kp UP           &kp RIGHT   &none
+&none   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp HOME    &kp PAGE_UP     &kp UP_ARROW       &kp PAGE_DOWN    &none       &none
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp INSERT  &kp LEFT        &kp DOWN           &kp UP           &none       &none
 &trans  &kp F11  &kp F12  &trans  &none   &none      &kp END     &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &none
                           &trans  &trans  &trans     &trans      &trans          &trans
             >;
@@ -71,9 +71,9 @@
 
         adjust_layer {
             bindings = <
-&bootloader     &none         &none         &none         &none         &none         &bootloader  &none   &none   &none   &none    &none
-&kp F12         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &none        &none   &none   &none   &none    &none
+&bootloader     &none         &none         &none         &none         &none         &bootloader  &none   &none   &none  &none  &none
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &none        &none   &none   &none  &none  &none
+&none           &none         &none         &none         &none         &none         &none        &none   &none   &none  &none  &none
                                             &trans        &trans        &trans        &trans       &trans  &trans
             >;
 
