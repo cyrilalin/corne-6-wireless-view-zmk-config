@@ -36,11 +36,13 @@
 
             display-name = "Num_Sym";
             bindings = <
-&none  &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp BSPC
+&none  &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &none
 &none  &kp N1        &kp N2        &kp N3         &kp N4         &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp LS(PIPE)
 &none  &kp EQUAL     &kp LS(PLUS)  &kp MINUS      &kp LS(UNDER)  &kp LS(TILDE)    &kp LBKT       &kp RBKT      &kp LS(LBRC)  &kp LS(RBRC)  &kp BSLH      &none
                                    &trans         &trans         &trans           &trans         &trans        &trans
             >;
+
+            label = "Num_Sym";
         };
 
         nav_layer {
@@ -52,19 +54,21 @@
 
             display-name = "Nav";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &trans    &trans       &trans     &trans     &trans
+&none  &none  &none  &none   &none   &none     &none   &none     &none     &none   &none      &none
+&none  &none  &none  &none   &none   &none     &none   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&none  &none  &none  &trans  &none   &none     &none   &none     &none     &none   &none      &none
+                     &trans  &trans  &trans    &trans  &trans    &trans
             >;
+
+            label = "Nav";
         };
 
         adjust_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&bootloader  &trans   &trans  &trans  &trans  &trans    &bootloader  &trans  &trans  &trans  &trans  &trans
+&kp F12      &kp ESC  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
+&trans       &trans   &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans       &trans  &trans
             >;
 
             label = "Adjust";
